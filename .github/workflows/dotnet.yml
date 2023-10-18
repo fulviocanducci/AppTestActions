@@ -4,6 +4,11 @@
 name: .NET
 
 on:
+  workflow_dispatch:  
+    inputs:
+      tag:
+        description: 'New Version Tag'
+        required: true
   push:
     tags:
       - '*'
